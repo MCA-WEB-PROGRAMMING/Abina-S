@@ -1,0 +1,147 @@
+<html>
+<head>
+  <style>
+body{
+    background: url("image3.jpg");
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+  <title></title>
+<script type="text/javascript">
+      function validate()
+      {
+        if(document.myform.aname.value=="")
+        {
+          alert("Enter your name");
+          document.myform.aname.focus();
+          return false;
+        }  
+       if(document.myform.aaddress.value=="")
+        {
+          alert("Enter your address");
+          document.myform.aaddress.focus();
+          return false;
+        }   
+
+        if(document.myform.aage.value=="")
+        {
+          alert("Enter your age");
+          document.myform.aage.focus();
+          return false;
+        }  
+       
+        if(document.myform.adob.value=="")
+        {
+          alert("Enter your date of birth");
+          document.myform.adob.focus();
+          return false;
+        } 
+
+        if(document.myform.aphoneno.value.length!=10)
+        {
+          alert("Enter your phone number correctly");
+          document.myform.aphoneno.focus();
+          return false;
+        }
+        if(document.myform.aemail.value=="")
+        {
+          alert("Enter your email id");
+          document.myform.aemail.focus();
+          return false;
+        }
+
+        if(document.myform.ausername.value=="")
+        {
+          alert("Enter username");
+          document.myform.ausername.focus();
+          return false;
+        }
+       
+        if(document.myform.apassword.value=="")
+        {
+          alert("Enter a strong password");
+          document.myform.apassword.focus();
+          return false;
+        }
+        return true;
+      }  
+    </script>
+  </head>
+  <body text="white">
+
+    <center>
+  <h1><font color="white" face="algerian">Registration Form</font></b></h1>
+
+ <form name="myform" action="loginadminchk.php" onsubmit="return validate()" method="POST">
+
+    <font color="white">
+    <table  cellspacing="8">
+      <tr>
+        <td>NAME:</td>
+        <td><input type="text" name="aname"></td>
+      </tr>
+      <tr>
+        <td>ADDRESS:</td>
+        <td><input type="text" name="aaddress"></td>
+      </tr>
+      <tr>
+        <td>AGE:</td>
+        <td><input type="number" name="aage"></td>
+      </tr>
+      <tr>
+        <td>DATE OF BIRTH:</td>
+        <td><input type="date" name="adob"></td>
+      </tr>
+      <tr>
+        <td>PHONE NUMBER:</td>
+        <td><input type="number" name="aphoneno"></td>
+      </tr>
+      <tr>
+        <td>EMAIL ID</td>
+        <td><input type="email" name="aemail"></td>
+      </tr>
+      <tr>
+        <td>GENDER:</td>
+        <td><input type="radio" id="html" name="agender" value="MALE">MALE<br>
+            <input type="radio" id="html" name="agender" value="FEMALE">FEMALE<br>
+            <input type="radio" id="html" name="agender" value="OTHER">OTHER</td>
+      </tr>
+      <tr>
+          <td>STATE:</td>
+          <td>
+            <select name="astate">
+                <option selected="" value="default">Please select a state</option>
+                <option value="kerala">KERALA</option>
+                <option value="tamilnadu">TAMILNADU</option>
+                <option value="karnataka">KARNATAKA</option>
+                <option value="assam">ASSAM</option>
+                <option value="maharashtra">MAHARASHTRA</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+          <td>LANGUAGE KNOWN:</td>
+          <td><input type="checkbox"  name="al1" value="m">C++<br>
+            <input type="checkbox"  name="al2" value="m2">Java<br>
+            <input type="checkbox"  name="al4" value="m4">Php<br>
+            <input type="checkbox"  name="al3" value="m3">Python</td>
+        </tr>
+      <tr>
+        <td>USERNAME:</td>
+        <td><input type="text" name="ausername"></td>
+      </tr>
+      <tr>
+        <td>PASSWORD:</td>
+        <td><input type="password" name="apassword"></td>
+      </tr>
+      <tr><td></td></tr>
+      <tr><td></td></tr>
+      <tr>
+        <td></td>
+<td><input type="submit" name="asubmit" value="SUBMIT"></td>
+      </tr>
+    </table>
+  </form>
+</body></html>

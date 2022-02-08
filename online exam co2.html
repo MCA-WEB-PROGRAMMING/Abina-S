@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            h2{
+                color:plum;
+                font-family:cursive;
+            }
+            table{
+                background-color:bisque;
+                font-family: cursive;
+            }
+        </style>
+        <script type="text/javascript">
+            var c=0;
+            var score=0;
+            function funct()
+            {
+                if(document.getElementById('java').checked)
+        
+              {
+               score=score+1;
+              }  
+              if(document.getElementById('8').checked)
+        
+              {
+               score=score+1;
+              }  
+              if(document.getElementById('i').checked)
+        
+              {
+               score=score+1;
+              } 
+              document.write("Your Score is:") ;
+              document.write(score);
+                
+            }
+</script>
+</head>
+<body>
+    <h2 align="center"><u>ONLINE QUIZ</u></h2>
+<form name="form1">
+    <table  align="center">
+        <tr>
+         <td><p><h3>Question 1:Which is the best programming language?</h3></p>
+            <p><input type="radio" id="html" name="s1" value="html">HTML</p>
+            <p><input type="radio" id="c++" name="s1" value="c++">C++</p>
+            <p><input type="radio" id="java"  name="s1" value="C">JAVA</p>
+            <p><input type="radio" id="python"  name="s1" value="c++">PYTHON</p></td>
+            </tr>
+            <tr>
+            <td><p><h3>Question 2:Find 2+(3*2).</h3></p>
+                <p><input type="radio" id="8" name="s2" value="8">8</p>
+                <p><input type="radio" id="10" name="s2" value="10">10</p>
+                <p><input type="radio" id="20" name="s2" value="20">20</p>
+                    <p><input type="radio" id="5" name="s2" value="5">5</p></td>
+            </tr>
+                    <tr>
+                         <td><p><h3>Question 3:Which HTML tag is used to make a text italic?</h3></p>
+                            <p><input type="radio" id="li" name="s3" value="li">li</p>
+                            <p><input type="radio" id="u" name="s3" value="u">u</p>
+                            <p><input type="radio" id="b"  name="s3" value="b">b</p>
+                            <p><input type="radio" id="i"  name="s3" value="i">i</p></td>
+                           
+                    </tr>
+                   <tr>
+    <td align="center">
+    <button  onclick="funct()">SUBMIT</button></td>
+    </tr>
+    </table>
+    </form>
+    </body>
+    </html>
